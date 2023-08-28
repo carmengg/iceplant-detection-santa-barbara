@@ -1,0 +1,49 @@
+THIS IS A DESCRIPTION OF THE test_2500 and train_2500 DATASETS 
+-------------------------------------------------------------
+
+These datasets only have points collected from the 2020 NAIP scenes and have the following characteristics: 
+
+- Four regions were used to sample these points, these are: Point Conception (S1), Gaviota State Park (S2), El Capitan State Beach (S3), the University of California, Santa Barbara campus (S4), and Carpinteria State Beach (S5).
+
+- points have coordinates in the EPSG 364 crs
+
+- all points are within the area of interest: Following NOAA specifications for coastal zones, we outlined this region by creating a 914.4m (1000 yard) buffer inland from the Santa Barbara County coastline in QGIS using the 2007 CAL FIRE shapefile for Santa Barbara county.
+
+- Vegetation points in S1-S4 and all points in S5 were randomly sampled from regions within the corresponding NAIP scene with high-NDVI (NDVI>0.05) and classified using Collect Earth Online.
+
+- Iceplant points in S1-S4 were randomly sampled from polygons outlining iceplant.
+
+To create the training and test sets, 70% of iceplant points and 70% of other vegetation were sampled for training set, stratifying by aoi.
+
+-------------------------------------------------------------
+AOIs: S1 = carpinteria, S2 = campus, S3 = capitan, S4 = gaviota, S5 = pt. conception
+-------------------------------------------------------------
+
+DATASET COUNTS
+         ice      |  non-ice  | total
+train |   770     |    980    |  1750 
+test  |   330     |    420    |   750
+total |  1100     |   1400    |  2500
+
+% iceplan in dataset      : 44%
+% non-iceplant in dataset : 56%
+
+-------------------------------------------------------------
+S2-S5 AOI SAMPLES
+         ice      |  non-ice  | total
+train |   140     |    210    |  350 
+test  |    60     |     90    |  150
+total |   200     |    300    |  500
+
+% iceplant in pts from aoi     : 40%
+% non-iceplant in pts from aoi : 60%
+
+-------------------------------------------------------------
+S1 AOI SAMPLES
+         ice      |  non-ice  | total
+train |   210     |    140    |  350 
+test  |    90     |     60    |  150
+total |   300     |    200    |  500
+
+% iceplant in pts from aoi     : 60%
+% non-iceplant in pts from aoi : 40%
