@@ -1,4 +1,4 @@
-# Mapping Invasive Iceplant Extent in Southern Coastal California Using High-Resolution Aerial Imagery
+# Mapping Invasive Iceplant Extent in Southern Coastal California Using High-Resolution Aerial Imagery - Code Repository
 
 **UNDER CONSTRUCTION**
 
