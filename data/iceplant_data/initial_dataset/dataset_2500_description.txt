@@ -9,14 +9,19 @@ These datasets only have points collected from the 2020 NAIP scenes and have the
 
 - all points are within the area of interest: Following NOAA specifications for coastal zones, we outlined this region by creating a 914.4m (1000 yard) buffer inland from the Santa Barbara County coastline in QGIS using the 2007 CAL FIRE shapefile for Santa Barbara county.
 
-- Vegetation points in S1-S4 and all points in S5 were randomly sampled from regions within the corresponding NAIP scene with high-NDVI (NDVI>0.05) and classified using Collect Earth Online.
+- Vegetation points in S2-S5 and all points in S1 were randomly sampled from regions within the corresponding NAIP scene with high-NDVI (NDVI>0.05) and classified using Collect Earth Online (https://app.collect.earth/).
 
-- Iceplant points in S1-S4 were randomly sampled from polygons outlining iceplant.
+- Iceplant points in S2-S5 were randomly sampled from polygons outlining iceplant.
 
 To create the training and test sets, 70% of iceplant points and 70% of other vegetation were sampled for training set, stratifying by aoi.
 
 -------------------------------------------------------------
-AOIs: S1 = carpinteria, S2 = campus, S3 = capitan, S4 = gaviota, S5 = pt. conception
+AOIs: 
+S1 = Point Conception 
+S2 = Gaviota State Park
+S3 = El Capitan State Beach
+S4 = University of California, Santa Barbara campus
+S5 = Carpinteria State Beach
 -------------------------------------------------------------
 
 DATASET COUNTS
