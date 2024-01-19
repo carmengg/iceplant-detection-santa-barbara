@@ -1,0 +1,71 @@
+THIS IS A DESCRIPTION OF THE extended_dataset_final_model_test and extended_dataset_final_model_train DATASETS 
+-------------------------------------------------------------
+
+These datasets only have points collected from the 2020 NAIP scenes and have the following characteristics: 
+
+- Four regions were used to sample these points, these are: Point Conception (S1), Gaviota State Park (S2), El Capitan State Beach (S3), the University of California, Santa Barbara campus (S4), and Carpinteria State Beach (S5).
+
+- points have coordinates in the EPSG 364 CRS
+
+- all points are within the area of interest: Following NOAA specifications for coastal zones, we outlined this region by creating a 914.4m (1000 yard) buffer inland from the Santa Barbara County coastline in QGIS using the 2007 CAL FIRE shapefile for Santa Barbara county.
+
+- Vegetation points in S2-S5 and all points in S1 were randomly sampled from regions within the corresponding NAIP scene with high-NDVI (NDVI>0.05) and classified using Collect Earth Online (https://app.collect.earth/).
+
+- Iceplant points in S2-S5 were randomly sampled from polygons outlining iceplant.
+
+To create the training and test sets, 70% of iceplant points and 70% of other vegetation were sampled for training set, stratifying by aoi.
+
+-------------------------------------------------------------
+AOIs: 
+S1 = Point Conception 
+S2 = Gaviota State Park
+S3 = El Capitan State Beach
+S4 = University of California, Santa Barbara campus
+S5 = Carpinteria State Beach
+-------------------------------------------------------------
+
+DATASET COUNTS
+          ice      |  non-ice   | total
+train |   2081     |    3361    |  5442
+test  |    625     |    1000    |  1625
+total |   1456     |    2361    |  3817
+
+% iceplant in dataset      : 38%
+% non-iceplant in dataset : 62%
+
+-------------------------------------------------------------
+S1 AOI SAMPLES
+         ice      |  non-ice  | total
+train |   210     |   331     |  541
+test  |    90     |   132     |  222
+total |   300     |   463     |  763
+
+-------------------------------------------------------------
+S2 AOI SAMPLES
+         ice      |  non-ice  | total
+train |   307     |    495    |  802
+test  |   132     |    212    |  344
+total |   439     |    707    | 1146
+
+-------------------------------------------------------------
+S3 AOI SAMPLES
+         ice      |  non-ice  | total
+train |   315     |     510   |  825
+test  |   135     |     218   |  353
+total |   450     |     728   | 1178 
+
+-------------------------------------------------------------
+S4 AOI SAMPLES
+         ice      |  non-ice  | total
+train |   291     |     478   |  769
+test  |   123     |     201   |  324
+total |   414     |     679   | 1093 
+
+-------------------------------------------------------------
+S5 AOI SAMPLES
+         ice      |  non-ice  | total
+train |   333     |     547   |  880
+test  |   145     |     237   |  382
+total |   478     |     784   | 1262
+
+
